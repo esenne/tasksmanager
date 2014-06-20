@@ -1,0 +1,22 @@
+<assembly>
+   <id>business</id>
+   <formats>
+      <format>jar</format>
+   </formats>
+   <includeBaseDirectory>false</includeBaseDirectory>
+   <fileSets>
+     <fileSet>
+         <directory>target/classes/</directory>
+         <includes>
+           <include>*.xml</include>
+           <include>*.properties</include>
+           <include>templates/**</include>
+         </includes>
+         <outputDirectory>/</outputDirectory>
+      </fileSet>
+      <fileSet>
+        <directory>target/classes/com/bpanalytics/tasksmanager/</directory>
+        <outputDirectory>/com/bpanalytics/tasksmanager/</outputDirectory>
+      </fileSet>
+   </fileSets>
+</assembly>
